@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9F9514C22A6B511004474EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9514B22A6B511004474EB /* AppDelegate.swift */; };
+		F9F9514E22A6B511004474EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9514D22A6B511004474EB /* SceneDelegate.swift */; };
+		F9F9515222A6B511004474EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9F9515122A6B511004474EB /* Assets.xcassets */; };
+		F9F9515522A6B511004474EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9F9515422A6B511004474EB /* Preview Assets.xcassets */; };
+		F9F9515822A6B511004474EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F9515622A6B511004474EB /* LaunchScreen.storyboard */; };
+		F9F9516322A6B511004474EB /* iOS_PlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9516222A6B511004474EB /* iOS_PlaygroundTests.swift */; };
+		F9F9516E22A6B511004474EB /* iOS_PlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9516D22A6B511004474EB /* iOS_PlaygroundUITests.swift */; };
+		F9F9517D22A6B61A004474EB /* MovieRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9517C22A6B61A004474EB /* MovieRow.swift */; };
+		F9F9518122A6C593004474EB /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9518022A6C593004474EB /* MovieListView.swift */; };
+		F9F9518422A6F7F8004474EB /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = F9F9518322A6F7F8004474EB /* Moya */; };
+		F9F9518722A6FD7C004474EB /* MovieMoyaTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9518622A6FD7C004474EB /* MovieMoyaTarget.swift */; };
+		F9F9518A22A6FDF0004474EB /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9518922A6FDF0004474EB /* ApiConstants.swift */; };
+		F9F9518D22A6FE66004474EB /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9518C22A6FE66004474EB /* Movie.swift */; };
+		F9F9519422A701E1004474EB /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9519322A701E1004474EB /* MovieListViewModel.swift */; };
+		F9F9519822A70DE9004474EB /* MovieNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9519722A70DE9004474EB /* MovieNetworkModel.swift */; };
+		F9F9519A22A70E3A004474EB /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9519922A70E3A004474EB /* MovieList.swift */; };
+		F9F951A022A71C3A004474EB /* Image+LoadFromUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9519F22A71C3A004474EB /* Image+LoadFromUrl.swift */; };
+		F9F951A222A71CBB004474EB /* Moya+Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F951A122A71CBB004474EB /* Moya+Publisher.swift */; };
+		F9F951A522A7307A004474EB /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = F9F951A422A7307A004474EB /* AlamofireImage */; };
+		F9F951A722A74E90004474EB /* MovieRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F951A622A74E90004474EB /* MovieRowViewModel.swift */; };
+		F9F951AA22A753B6004474EB /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F951A922A753B6004474EB /* ImageView.swift */; };
+		F9F951AD22A753EC004474EB /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F951AC22A753EC004474EB /* ImageViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9F9515F22A6B511004474EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9F9514022A6B511004474EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9F9514722A6B511004474EB;
+			remoteInfo = "iOS Playground";
+		};
+		F9F9516A22A6B511004474EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9F9514022A6B511004474EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9F9514722A6B511004474EB;
+			remoteInfo = "iOS Playground";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F9F9514822A6B511004474EB /* iOS Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9F9514B22A6B511004474EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9F9514D22A6B511004474EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F9F9515122A6B511004474EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9F9515422A6B511004474EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F9F9515722A6B511004474EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9F9515922A6B511004474EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9F9515E22A6B511004474EB /* iOS PlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS PlaygroundTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9F9516222A6B511004474EB /* iOS_PlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_PlaygroundTests.swift; sourceTree = "<group>"; };
+		F9F9516422A6B511004474EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9F9516922A6B511004474EB /* iOS PlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS PlaygroundUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9F9516D22A6B511004474EB /* iOS_PlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_PlaygroundUITests.swift; sourceTree = "<group>"; };
+		F9F9516F22A6B511004474EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9F9517C22A6B61A004474EB /* MovieRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRow.swift; sourceTree = "<group>"; };
+		F9F9518022A6C593004474EB /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
+		F9F9518622A6FD7C004474EB /* MovieMoyaTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieMoyaTarget.swift; sourceTree = "<group>"; };
+		F9F9518922A6FDF0004474EB /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		F9F9518C22A6FE66004474EB /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		F9F9519322A701E1004474EB /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		F9F9519722A70DE9004474EB /* MovieNetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieNetworkModel.swift; sourceTree = "<group>"; };
+		F9F9519922A70E3A004474EB /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
+		F9F9519F22A71C3A004474EB /* Image+LoadFromUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+LoadFromUrl.swift"; sourceTree = "<group>"; };
+		F9F951A122A71CBB004474EB /* Moya+Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Publisher.swift"; sourceTree = "<group>"; };
+		F9F951A622A74E90004474EB /* MovieRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRowViewModel.swift; sourceTree = "<group>"; };
+		F9F951A922A753B6004474EB /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		F9F951AC22A753EC004474EB /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9F9514522A6B511004474EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9F9518422A6F7F8004474EB /* Moya in Frameworks */,
+				F9F951A522A7307A004474EB /* AlamofireImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9F9515B22A6B511004474EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9F9516622A6B511004474EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9F9513F22A6B511004474EB = {
+			isa = PBXGroup;
+			children = (
+				F9F9514A22A6B511004474EB /* iOS Playground */,
+				F9F9516122A6B511004474EB /* iOS PlaygroundTests */,
+				F9F9516C22A6B511004474EB /* iOS PlaygroundUITests */,
+				F9F9514922A6B511004474EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9F9514922A6B511004474EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9F9514822A6B511004474EB /* iOS Playground.app */,
+				F9F9515E22A6B511004474EB /* iOS PlaygroundTests.xctest */,
+				F9F9516922A6B511004474EB /* iOS PlaygroundUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9F9514A22A6B511004474EB /* iOS Playground */ = {
+			isa = PBXGroup;
+			children = (
+				F9F9519022A70077004474EB /* Reusables */,
+				F9F9517B22A6B603004474EB /* Movie */,
+				F9F9514B22A6B511004474EB /* AppDelegate.swift */,
+				F9F9514D22A6B511004474EB /* SceneDelegate.swift */,
+				F9F9515122A6B511004474EB /* Assets.xcassets */,
+				F9F9515622A6B511004474EB /* LaunchScreen.storyboard */,
+				F9F9515922A6B511004474EB /* Info.plist */,
+				F9F9515322A6B511004474EB /* Preview Content */,
+			);
+			path = "iOS Playground";
+			sourceTree = "<group>";
+		};
+		F9F9515322A6B511004474EB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F9F9515422A6B511004474EB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F9F9516122A6B511004474EB /* iOS PlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9F9516222A6B511004474EB /* iOS_PlaygroundTests.swift */,
+				F9F9516422A6B511004474EB /* Info.plist */,
+			);
+			path = "iOS PlaygroundTests";
+			sourceTree = "<group>";
+		};
+		F9F9516C22A6B511004474EB /* iOS PlaygroundUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9F9516D22A6B511004474EB /* iOS_PlaygroundUITests.swift */,
+				F9F9516F22A6B511004474EB /* Info.plist */,
+			);
+			path = "iOS PlaygroundUITests";
+			sourceTree = "<group>";
+		};
+		F9F9517B22A6B603004474EB /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				F9F9519222A701CA004474EB /* Views */,
+				F9F9519122A701C3004474EB /* ViewModels */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		F9F9518522A6FD60004474EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F9F9519722A70DE9004474EB /* MovieNetworkModel.swift */,
+				F9F9518622A6FD7C004474EB /* MovieMoyaTarget.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F9F9518822A6FDE5004474EB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F9F9518922A6FDF0004474EB /* ApiConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F9F9518B22A6FE54004474EB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F9F9518C22A6FE66004474EB /* Movie.swift */,
+				F9F9519922A70E3A004474EB /* MovieList.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F9F9519022A70077004474EB /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				F9F951AB22A753E0004474EB /* ViewModels */,
+				F9F951A822A753A6004474EB /* Views */,
+				F9F9519E22A71C27004474EB /* Extensions */,
+				F9F9518B22A6FE54004474EB /* Entity */,
+				F9F9518822A6FDE5004474EB /* Constants */,
+				F9F9518522A6FD60004474EB /* Models */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		F9F9519122A701C3004474EB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F9F9519322A701E1004474EB /* MovieListViewModel.swift */,
+				F9F951A622A74E90004474EB /* MovieRowViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F9F9519222A701CA004474EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F9F9517C22A6B61A004474EB /* MovieRow.swift */,
+				F9F9518022A6C593004474EB /* MovieListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F9F9519E22A71C27004474EB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F9F9519F22A71C3A004474EB /* Image+LoadFromUrl.swift */,
+				F9F951A122A71CBB004474EB /* Moya+Publisher.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F9F951A822A753A6004474EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F9F951A922A753B6004474EB /* ImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F9F951AB22A753E0004474EB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F9F951AC22A753EC004474EB /* ImageViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9F9514722A6B511004474EB /* iOS Playground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9F9517222A6B511004474EB /* Build configuration list for PBXNativeTarget "iOS Playground" */;
+			buildPhases = (
+				F9F9514422A6B511004474EB /* Sources */,
+				F9F9514522A6B511004474EB /* Frameworks */,
+				F9F9514622A6B511004474EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS Playground";
+			packageProductDependencies = (
+				F9F9518322A6F7F8004474EB /* Moya */,
+				F9F951A422A7307A004474EB /* AlamofireImage */,
+			);
+			productName = "iOS Playground";
+			productReference = F9F9514822A6B511004474EB /* iOS Playground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9F9515D22A6B511004474EB /* iOS PlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9F9517522A6B511004474EB /* Build configuration list for PBXNativeTarget "iOS PlaygroundTests" */;
+			buildPhases = (
+				F9F9515A22A6B511004474EB /* Sources */,
+				F9F9515B22A6B511004474EB /* Frameworks */,
+				F9F9515C22A6B511004474EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9F9516022A6B511004474EB /* PBXTargetDependency */,
+			);
+			name = "iOS PlaygroundTests";
+			productName = "iOS PlaygroundTests";
+			productReference = F9F9515E22A6B511004474EB /* iOS PlaygroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F9F9516822A6B511004474EB /* iOS PlaygroundUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9F9517822A6B511004474EB /* Build configuration list for PBXNativeTarget "iOS PlaygroundUITests" */;
+			buildPhases = (
+				F9F9516522A6B511004474EB /* Sources */,
+				F9F9516622A6B511004474EB /* Frameworks */,
+				F9F9516722A6B511004474EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9F9516B22A6B511004474EB /* PBXTargetDependency */,
+			);
+			name = "iOS PlaygroundUITests";
+			productName = "iOS PlaygroundUITests";
+			productReference = F9F9516922A6B511004474EB /* iOS PlaygroundUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9F9514022A6B511004474EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Khairil Ushan";
+				TargetAttributes = {
+					F9F9514722A6B511004474EB = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					F9F9515D22A6B511004474EB = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = F9F9514722A6B511004474EB;
+					};
+					F9F9516822A6B511004474EB = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = F9F9514722A6B511004474EB;
+					};
+				};
+			};
+			buildConfigurationList = F9F9514322A6B511004474EB /* Build configuration list for PBXProject "iOS Playground" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9F9513F22A6B511004474EB;
+			packageReferences = (
+				F9F9518222A6F7F8004474EB /* XCRemoteSwiftPackageReference "Moya" */,
+				F9F9519B22A71C1D004474EB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				F9F951A322A7307A004474EB /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
+			productRefGroup = F9F9514922A6B511004474EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9F9514722A6B511004474EB /* iOS Playground */,
+				F9F9515D22A6B511004474EB /* iOS PlaygroundTests */,
+				F9F9516822A6B511004474EB /* iOS PlaygroundUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9F9514622A6B511004474EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9F9515822A6B511004474EB /* LaunchScreen.storyboard in Resources */,
+				F9F9515522A6B511004474EB /* Preview Assets.xcassets in Resources */,
+				F9F9515222A6B511004474EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9F9515C22A6B511004474EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9F9516722A6B511004474EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9F9514422A6B511004474EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9F9518A22A6FDF0004474EB /* ApiConstants.swift in Sources */,
+				F9F9514C22A6B511004474EB /* AppDelegate.swift in Sources */,
+				F9F951A022A71C3A004474EB /* Image+LoadFromUrl.swift in Sources */,
+				F9F9518722A6FD7C004474EB /* MovieMoyaTarget.swift in Sources */,
+				F9F9519822A70DE9004474EB /* MovieNetworkModel.swift in Sources */,
+				F9F9517D22A6B61A004474EB /* MovieRow.swift in Sources */,
+				F9F951AD22A753EC004474EB /* ImageViewModel.swift in Sources */,
+				F9F9514E22A6B511004474EB /* SceneDelegate.swift in Sources */,
+				F9F9518122A6C593004474EB /* MovieListView.swift in Sources */,
+				F9F9518D22A6FE66004474EB /* Movie.swift in Sources */,
+				F9F951A722A74E90004474EB /* MovieRowViewModel.swift in Sources */,
+				F9F9519A22A70E3A004474EB /* MovieList.swift in Sources */,
+				F9F951A222A71CBB004474EB /* Moya+Publisher.swift in Sources */,
+				F9F951AA22A753B6004474EB /* ImageView.swift in Sources */,
+				F9F9519422A701E1004474EB /* MovieListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9F9515A22A6B511004474EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9F9516322A6B511004474EB /* iOS_PlaygroundTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9F9516522A6B511004474EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9F9516E22A6B511004474EB /* iOS_PlaygroundUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9F9516022A6B511004474EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9F9514722A6B511004474EB /* iOS Playground */;
+			targetProxy = F9F9515F22A6B511004474EB /* PBXContainerItemProxy */;
+		};
+		F9F9516B22A6B511004474EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9F9514722A6B511004474EB /* iOS Playground */;
+			targetProxy = F9F9516A22A6B511004474EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9F9515622A6B511004474EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9F9515722A6B511004474EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9F9517022A6B511004474EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9F9517122A6B511004474EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9F9517322A6B511004474EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS Playground\"/Preview\\ Content";
+				DEVELOPMENT_TEAM = 3SPH364Z54;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "iOS Playground/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.khairilushan.iOS-Playground";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9F9517422A6B511004474EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS Playground\"/Preview\\ Content";
+				DEVELOPMENT_TEAM = 3SPH364Z54;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "iOS Playground/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.khairilushan.iOS-Playground";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F9F9517622A6B511004474EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS PlaygroundTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.khairilushan.iOS-PlaygroundTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Playground.app/iOS Playground";
+			};
+			name = Debug;
+		};
+		F9F9517722A6B511004474EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS PlaygroundTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.khairilushan.iOS-PlaygroundTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Playground.app/iOS Playground";
+			};
+			name = Release;
+		};
+		F9F9517922A6B511004474EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS PlaygroundUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.khairilushan.iOS-PlaygroundUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iOS Playground";
+			};
+			name = Debug;
+		};
+		F9F9517A22A6B511004474EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS PlaygroundUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.khairilushan.iOS-PlaygroundUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iOS Playground";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9F9514322A6B511004474EB /* Build configuration list for PBXProject "iOS Playground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9F9517022A6B511004474EB /* Debug */,
+				F9F9517122A6B511004474EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9F9517222A6B511004474EB /* Build configuration list for PBXNativeTarget "iOS Playground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9F9517322A6B511004474EB /* Debug */,
+				F9F9517422A6B511004474EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9F9517522A6B511004474EB /* Build configuration list for PBXNativeTarget "iOS PlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9F9517622A6B511004474EB /* Debug */,
+				F9F9517722A6B511004474EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9F9517822A6B511004474EB /* Build configuration list for PBXNativeTarget "iOS PlaygroundUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9F9517922A6B511004474EB /* Debug */,
+				F9F9517A22A6B511004474EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F9F9518222A6F7F8004474EB /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.1;
+			};
+		};
+		F9F9519B22A71C1D004474EB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.5.0;
+			};
+		};
+		F9F951A322A7307A004474EB /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F9F9518322A6F7F8004474EB /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9F9518222A6F7F8004474EB /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		F9F951A422A7307A004474EB /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9F951A322A7307A004474EB /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F9F9514022A6B511004474EB /* Project object */;
+}
