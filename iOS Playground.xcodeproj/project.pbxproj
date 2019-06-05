@@ -23,7 +23,6 @@
 		F9F9519422A701E1004474EB /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9519322A701E1004474EB /* MovieListViewModel.swift */; };
 		F9F9519822A70DE9004474EB /* MovieNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9519722A70DE9004474EB /* MovieNetworkModel.swift */; };
 		F9F9519A22A70E3A004474EB /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9519922A70E3A004474EB /* MovieList.swift */; };
-		F9F951A022A71C3A004474EB /* Image+LoadFromUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9519F22A71C3A004474EB /* Image+LoadFromUrl.swift */; };
 		F9F951A222A71CBB004474EB /* Moya+Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F951A122A71CBB004474EB /* Moya+Publisher.swift */; };
 		F9F951A522A7307A004474EB /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = F9F951A422A7307A004474EB /* AlamofireImage */; };
 		F9F951A722A74E90004474EB /* MovieRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F951A622A74E90004474EB /* MovieRowViewModel.swift */; };
@@ -70,7 +69,6 @@
 		F9F9519322A701E1004474EB /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		F9F9519722A70DE9004474EB /* MovieNetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieNetworkModel.swift; sourceTree = "<group>"; };
 		F9F9519922A70E3A004474EB /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
-		F9F9519F22A71C3A004474EB /* Image+LoadFromUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+LoadFromUrl.swift"; sourceTree = "<group>"; };
 		F9F951A122A71CBB004474EB /* Moya+Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Publisher.swift"; sourceTree = "<group>"; };
 		F9F951A622A74E90004474EB /* MovieRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRowViewModel.swift; sourceTree = "<group>"; };
 		F9F951A922A753B6004474EB /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
@@ -234,7 +232,6 @@
 		F9F9519E22A71C27004474EB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F9F9519F22A71C3A004474EB /* Image+LoadFromUrl.swift */,
 				F9F951A122A71CBB004474EB /* Moya+Publisher.swift */,
 			);
 			path = Extensions;
@@ -398,7 +395,6 @@
 			files = (
 				F9F9518A22A6FDF0004474EB /* ApiConstants.swift in Sources */,
 				F9F9514C22A6B511004474EB /* AppDelegate.swift in Sources */,
-				F9F951A022A71C3A004474EB /* Image+LoadFromUrl.swift in Sources */,
 				F9F9518722A6FD7C004474EB /* MovieMoyaTarget.swift in Sources */,
 				F9F9519822A70DE9004474EB /* MovieNetworkModel.swift in Sources */,
 				F9F9517D22A6B61A004474EB /* MovieRow.swift in Sources */,
