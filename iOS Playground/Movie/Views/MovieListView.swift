@@ -10,12 +10,12 @@ import SwiftUI
 
 struct MovieListView : View {
 
-	@EnvironmentObject private var viewModel: MovieListViewModel
+	@ObjectBinding var viewModel: MovieListViewModel
 
 	var body: some View {
 		NavigationView {
 			List(viewModel.movies) { movie in
-				MovieRow().environmentObject(movie)
+				MovieCell(movie: movie)
 			}
 			.navigationBarTitle(Text("Movies"))
 		}
@@ -26,7 +26,7 @@ struct MovieListView : View {
 struct MovieListView_Previews : PreviewProvider {
 
 	static var previews: some View {
-		MovieListView().environmentObject(MovieListViewModel())
+		MovieListView(viewModel: MovieListViewModel())
 	}
 }
 #endif

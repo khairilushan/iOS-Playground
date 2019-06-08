@@ -1,5 +1,5 @@
 //
-//  MovieRow.swift
+//  MovieCell.swift
 //  iOS Playground
 //
 //  Created by Khairil Ushan on 04/06/19.
@@ -8,9 +8,9 @@
 
 import SwiftUI
 
-struct MovieRow : View {
+struct MovieCell : View {
 
-	@EnvironmentObject var movie: MovieRowViewModel
+	@ObjectBinding var movie: MovieCellViewModel
 
 	var body: some View {
 		VStack(alignment: .leading) {
@@ -37,7 +37,7 @@ struct MovieRow_Previews : PreviewProvider {
 
 	static var previews: some View {
 
-		let rowViewModel = MovieRowViewModel(
+		let rowViewModel = MovieCellViewModel(
 			id: 0,
 			title: "Captain Marvel",
 			overview: "Description",
@@ -45,7 +45,7 @@ struct MovieRow_Previews : PreviewProvider {
 			posterImage: UIImage(named: "placeholder")!
 		)
 
-		return MovieRow().environmentObject(rowViewModel)
+		return MovieCell(movie: rowViewModel)
     }
 }
 #endif

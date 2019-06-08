@@ -14,17 +14,17 @@ final class MovieListViewModel: BindableObject {
 
 	// MARK: - Public Properties
 
-	let didChange = PassthroughSubject<MovieListViewModel, Never>()
+	let didChange = PassthroughSubject<Void, Never>()
 
 	var isLoading: Bool = false {
 		didSet {
-			didChange.send(self)
+			didChange.send(())
 		}
 	}
 
-	var movies: [MovieRowViewModel] = [] {
+	var movies: [MovieCellViewModel] = [] {
 		didSet {
-			didChange.send(self)
+			didChange.send(())
 		}
 	}
 
@@ -43,19 +43,15 @@ final class MovieListViewModel: BindableObject {
 
 	private func retrieveMovieList() {
 
-		networkModel.getMovieList(sort: .popularity(descending: true), year: 2019, page: 1)
-			.subscribe(
-				AnySubscriber(
-					receiveSubscription: nil,
-					receiveValue: { [weak self] (value: MovieList) -> Subscribers.Demand in
+		_ = networkModel.getMovieList(sort: .popularity(descending: true), year: 2019, page: 1)
+			.sink(receiveValue: { [weak self] (value: MovieList) in
 
-						if let movies = value.result {
-							self?.movies = movies.map(MovieRowViewModel.init(movie:))
-						}
-						return .unlimited
-					},
-					receiveCompletion: nil
-				)
-			)
+				guard let movies = value.result else {
+					return
+				}
+				self?.movies = movies.map(MovieCellViewModel.init(movie:))
+			}, receiveError: { (error: Error) in
+				print(error.localizedDescription)
+			})
 	}
 }

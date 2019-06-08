@@ -12,9 +12,9 @@ import Alamofire
 import AlamofireImage
 import Combine
 
-final class MovieRowViewModel: BindableObject {
+final class MovieCellViewModel: BindableObject {
 
-	let didChange = PassthroughSubject<MovieRowViewModel, Never>()
+	let didChange = PassthroughSubject<Void, Never>()
 	let id: Int
 	let title: String
 	let overview: String
@@ -22,7 +22,7 @@ final class MovieRowViewModel: BindableObject {
 
 	var posterImage: UIImage {
 		didSet {
-			didChange.send(self)
+			didChange.send(())
 		}
 	}
 
